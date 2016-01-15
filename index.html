@@ -1,0 +1,279 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="static_magan/css/reset.css" />
+  <link rel="stylesheet" type="text/css" href="static_magan/css/template.css" />
+  <script type="text/javascript" src="static_magan/js/jquery.js"></script>
+  <script type="text/javascript" src="static_magan/js/home.js"></script>
+  <title>Welcome to MaganHibbard.com</title>
+  <meta name="description" content="Magan Hibbard, your choice for your hair styling needs in the upstate of South Carolina. Conveintly located at 2241 Augusta Street Greenville, SC 29605." /> 
+  <meta name="keywords" content="Greenville Salon, Greenville Hair Stylist, Greenville SC, Taylors SC, Augusta Place Salon, Augusta Place, Foils, Hair Color, Men's Haircut, Haircut, Upsate SC, South Carlolina Hair Dresser" /> 
+  <!--[if lte IE 8]>
+        <link rel="stylesheet" type="text/css" href="static_magan/css/ie.css" />
+  <![endif]-->
+</head>
+<body>
+  <style>
+    .overlay .title { height:30px; }
+    .overlay .title h2 { float:left;font-size:50px;margin-left:32px; }
+    .overlay .title .close { float:right;margin:20px 5px 0 0;cursor:pointer; }
+    .overlay .title .close:hover { color:#444; }
+
+    .contact_div { background-color:#000;height:505px;top:252px;left:504px;position:absolute;width:755px;display:none; }
+    .contact_div .column { float:left;width:350px; }
+    .contact_div .column .row { margin-bottom:15px;}
+    .contact_div .column .row label { width:350px;color:#666; }
+    .contact_div .column .row label input { width:100%;margin-top:5px;font-size:15px;padding:3px; }
+    .contact_div .column .row label textarea { width:345px;height:157px;margin-top:5px;font-size:15px;resize:none;padding:3px; }
+    .contact_div .column.left { margin-right:20px;margin-top:35px;padding-left:35px; }
+    .contact_div .column.right { margin-top:35px; }
+    .contact_me_btn { border:1px solid #FFF;background-color:#444;padding:12px;cursor:pointer; }
+    .contact_me_btn:hover { background-color:#1F1F1F; }
+
+    .prices.overlay { background-color:#000;height:505px;top:0;left:504px;position:absolute;width:755px;display:none; }
+    .prices.overlay .text { padding:30px; }
+    .prices.overlay .text span, .prices.overlay ul li, .prices.overlay .disclaimer { color:#666; }
+    .prices.overlay .text span { display:block;font-size:18px;line-height:25px;width:530px; }
+    .prices.overlay .text .disclaimer { font-size:15px; }
+    .prices.overlay .text ul { float:left;width:600px;margin:25px 0 10px 20px; }
+    .prices.overlay .text ul li { float:left;width:295px;margin-bottom:20px; }
+
+    .about_me.overlay { background-color:#000;height:755px;top:0;left:504px;position:absolute;width:755px;display:none; }
+    .about_me.overlay .text { margin-top:20px; }
+    .about_me.overlay .text .column { float:left;width:350px;font-size:16px;line-height:21px; }
+    .about_me.overlay .text .column div { margin-bottom:20px;color:#666; }
+    .about_me.overlay .text .column.left { margin-left:40px;margin-right:15px; }
+    .about_me.overlay .text .column.right { width:348px; }
+
+    .site .title span a:hover, .site .about span a:hover { border-bottom:1px solid #A7AB1C; } 
+    .contact_div.overlay .info { margin-top:15px;padding-left:32px; }
+    .contact_div.overlay .phone { font-size:25px;color:#666; }
+    .contact_div.overlay .hours { margin-top:15px;color:#666; }
+    .contact_div.overlay .hours div { float:left;font-size:18px;margin:0 23px 10px 0;width:225px;color:#666; }
+    .contact_div.overlay .hours div span { float:left;margin-right:12px;width:87px;color:#666; }
+  </style>
+  <div class="listing">
+    <div class="contact_div overlay">
+      <form method="post" action="/contact/">
+      <div class="title">
+        <h2>contact</h2>
+        <div class="close">
+          close
+        </div>
+      </div>
+      <div style="clear:both;"></div>
+      <div class="info">
+	<div class="phone">Augusta Place: 864.241.4003</div>
+	<div class="hours">
+	  <div><span>Tuesday:</span> 9am - 4pm</div>
+	  <div><span>Wednesday:</span> 9am - 9pm</div>
+	  <div><span>Thursday:</span> 1pm - 9pm</div>
+	  <div><span>Friday:</span> 9am - 6pm</div>
+	  <div><span>Saturday:</span> 9am - 3pm</div>
+	</div>
+      </div>
+      <div style="clear:both;"></div>
+      <div class="column left">
+        <div class="row">
+          <label>
+	    name
+            <input type="text" name="name" />
+          </label>
+        </div>
+        <div class="row">
+          <label>
+	    email
+            <input type="text" name="email" />
+          </label>
+        </div>
+        <div class="row">
+          <label>
+	    phone
+            <input type="text" name="phone" />
+          </label>
+        </div>
+      </div>
+      <div class="column right">
+	<div class="row">
+	  <label>
+	    comments
+	    <textarea name="comments"></textarea>
+	  </label>
+	</div>
+	<div class="row">
+	  <div style='display:none'><input type='hidden' name='csrfmiddlewaretoken' value='e65c92c77f8ca5b9dea6371030564688' /></div>
+	  <input type="submit" value="send me the message" class="contact_me_btn" />
+	</div>
+      </div>
+      </form>
+    </div>
+
+    <div class="prices overlay">
+      <div class="title">
+        <h2>prices</h2>
+        <div class="close">
+          close
+        </div>
+      </div>
+      <div style="clear:both;"></div>
+      <div class="text">
+	  <span>
+            All hair services include a consultation, shampoo & conditioning, 
+            stress relieving scalp & neck massage, and a beverage of your choice.
+          </span>
+ 	  <ul>
+	    <li>Women's Cut $45+</li>
+ 	    <li>Men's Cut $30+</li>
+	    <li>Blow Dry $30+</li>
+	    <li>Single Process $55+</li>
+	    <li>Double Process $70+</li>
+	    <li>Partial Foil $70+</li>
+	    <li>Full Foil $90+</li>
+ 	    <li>Gloss $15+</li>
+	    <li>Updo $55+</li>
+	    <li>Bridal $80+</li>
+	    <li>Keragreen $200+</li>
+	  </ul>
+	  <div style="clear:both;"></div>
+          <div class="disclaimer">
+	    *Base added $20+
+	    <br />
+            **Off site bridal packages are available!
+          </div>
+      </div>
+
+    </div>
+
+    <div class="about_me overlay">
+      <div class="title">
+        <h2>about me</h2>
+        <div class="close">
+          close
+        </div>
+      </div>
+      <div style="clear:both;"></div>
+      <div class="text">
+	<div class="column left">
+ 	<div>
+	  I wanted to be a hair designer since the age of ten & accomplished 
+          that goal over 10 years ago. I am passionate about continuing in 
+          advanced hair education in order to grow my skills & deliver the 
+          best product to my clientele.  
+	</div>
+	<div>
+	  My first love has always been haircolor. I only use Aveda haircolor 
+          since it is so eco-friendly, contains nourishing organic oils, is 
+          superior in gray coverage, & is completely customizable making it 
+          possible to deliver the perfect haircolor shade for you.
+	</div>
+	<div>
+	  Hair shaping, formal hairstyles, & hair straighteners are also my 
+          specialties. I customize all my haircuts to my guests face shape, 
+          lifestyle, & hair texture. I texturize my haircuts when they are 
+          dry so I can best see how the hair will fall. I would love to make 
+          your special days even more special by creating a hair design that 
+          demands attention. I have done many formal hairstyles for fashion 
+          shows & love the creative challenge they present. Although keratin 
+          & Japanese straighteners are getting a lot of negative publicity, 
+          I have kept up on research, know which ones are safe & deliver an 
+          excellent result, & have one in my hair almost at any given time.
+	</div>
+	<div>
+	  My goal is for you to leave feeling beautiful and with the knowledge of how to achieve it yourself!
+	</div>
+	<div>
+	  Sincerely,
+	  <br />
+	  Magan  
+	</div>
+	</div>
+        <div class="column right">
+	  <img src="static_magan/images/hibbard_family.jpg" />
+        </div>
+      </div>
+    </div>
+
+    <div class="image two">
+      <img src="static_magan/images/magan.jpg" />
+    </div> 
+    <div class="image my_prices hover">
+	<div class="title prices">
+	  <h2>prices</h2>
+	</div>
+    </div> 
+    <div class="image">
+      <img src="static_magan/images/3.jpg" />
+    </div> 
+    <div class="image">
+      <img src="static_magan/images/4.jpg" />
+    </div> 
+    <div class="image two site hover">
+      <div class="name">
+	magan<span>hibbard</span>
+      </div>
+      <div class="title">
+	master stylist <span style="font-size:20px;color:#A7AB1C;">at <a style="text-decoration:none;color:#A7AB1C;" href="http://www.facebook.com/pages/Augusta-Place-Salon/128527153864899" style="color:#a7ab1c;" target="_blank">Augusta Place Salon</a></span>
+      </div>
+      <div class="about" style="display:none;">
+	about me <span style="font-size:20px;color:#A7AB1C;">at <a style="text-decoration:none;color:#A7AB1C;" href="http://www.facebook.com/pages/Augusta-Place-Salon/128527153864899" target="_blank">Augusta Place Salon</a></span>
+      </div>
+    </div> 
+    <div class="image">
+      <img src="static_magan/images/18.jpg" />
+    </div> 
+    <div class="image">
+      <img src="static_magan/images/17.jpg" />
+    </div> 
+    <div class="image">
+      <img src="static_magan/images/6.jpg" />
+    </div> 
+    <div class="image">
+      <img src="static_magan/images/14.jpg" />
+    </div> 
+    <div class="image">
+      <img src="static_magan/images/grant_pic.jpg" />
+    </div> 
+    <div class="image contact_me hover">
+	<div class="title contact">
+	  <h2>contact</h2>
+	</div>
+    </div> 
+    <div class="image">
+      <img src="static_magan/images/11.jpg" />
+    </div> 
+    <div class="image">
+      <img src="static_magan/images/12.jpg" />
+    </div> 
+    <div class="image">
+      <img src="static_magan/images/8.jpg" />
+    </div> 
+    <div class="image">
+      <img src="static_magan/images/1.jpg" />
+    </div> 
+    <div class="image">
+      <img src="static_magan/images/13.jpg" />
+    </div> 
+    <div class="image">
+      <img src="static_magan/images/2.jpg" />
+    </div> 
+    <div class="image">
+      <img src="static_magan/images/5.jpg" />
+    </div> 
+    <div style="clear:both;"></div>
+  </div>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30021435-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>

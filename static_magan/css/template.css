@@ -1,0 +1,16 @@
+html { }
+body { background-color:#000; }
+
+.listing { margin:0 auto;width:1260px;position:relative; }
+.listing .image { float:left;height:250px;width:250px;overflow:hidden;border:1px solid #000; }
+.listing .image.hover { cursor:pointer; }
+.listing .image .title h2 { margin-left:15px;font-size:40px;margin-top:10px; }
+.listing .image.site { color:#FFF;font-size:70px; }
+.listing .image.site .name { margin-top:15px; }
+.listing .image.site .name span { color:#2A0053; }
+.listing .image.site .title, .listing .image.site .about { font-size:50px;color:#444; }
+.listing .image.site:hover .title { display:none; }
+.listing .image .about { display:none; }
+.listing .image:hover .about { display:block !important; }
+.listing .image.two { width:501.5px; }
+

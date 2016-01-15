@@ -1,0 +1,9 @@
+.about_me.overlay .text .column.left {
+    margin-left: 0 !important;
+}
+
+.about_me.overlay { height:751px !important; }
+
+.prices.overlay { height:501px !important; }
+
+.overlay.contact_div { top:252px !important;height:499px !important; }
